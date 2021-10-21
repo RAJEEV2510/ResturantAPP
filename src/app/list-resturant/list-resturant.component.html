@@ -1,0 +1,27 @@
+
+<h1 class="text-center mt-3"> Resturant List</h1>
+
+
+<table class="table container mt-5">
+    <thead>
+      <tr>
+        <th scope="col">#Id</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Name</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let resto of collection" scope="row">
+        <td>{{resto.id}}</td>
+        <td>{{resto.Address}}</td>
+        <td>{{resto.email}}</td>
+        <td>{{resto.mobile}}</td>
+        <td>{{resto.name}}</td>
+
+      </tr> 
+
+    </tbody>
+  </table>
